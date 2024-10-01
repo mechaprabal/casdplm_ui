@@ -1,0 +1,358 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+        crossorigin="anonymous">
+</head>
+<title>Carbon Accounting DSS</title>
+</head>
+
+<body>
+
+    <nav class="navbar bg-dark border-bottom border-body navbar-expand-lg bg-body-tertiary"
+        data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Carbon Accounting</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/">Home</a>
+                    </li>
+                    <li class="nav-item"></li>
+                    <a class="nav-link active" aria-current="page" href="/about">About</a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+    <!-- Nav bar ends -->
+    <br><br>
+
+    <div class="container-fluid">
+        <div class="row">
+            <!-- column1 -->
+            <div class="col-md-6">
+                <div class="p-3 border bg-light">
+                    <h2>Choose emission sources</h2>
+                    <br>
+                    <form method="post">
+                        <div class="mb-3">
+                            <label for="country_select" class="form-label">Select a country</label>
+                            <select class="form-select" id="country_select" name="country_select"
+                                aria-label="Deafault select">
+                                <option value="AFG">AFG</option>
+                                <option value="AGO">AGO</option>
+                                <option value="ALB">ALB</option>
+                                <option value="AND">AND</option>
+                                <option value="ARE">ARE</option>
+                                <option value="ARG">ARG</option>
+                                <option value="ARM">ARM</option>
+                                <option value="ATG">ATG</option>
+                                <option value="AUS">AUS</option>
+                                <option value="AUT">AUT</option>
+                                <option value="AZE">AZE</option>
+                                <option value="BDI">BDI</option>
+                                <option value="BEL">BEL</option>
+                                <option value="BEN">BEN</option>
+                                <option value="BFA">BFA</option>
+                                <option value="BGD">BGD</option>
+                                <option value="BGR">BGR</option>
+                                <option value="BHR">BHR</option>
+                                <option value="BHS">BHS</option>
+                                <option value="BIH">BIH</option>
+                                <option value="BLR">BLR</option>
+                                <option value="BLZ">BLZ</option>
+                                <option value="BOL">BOL</option>
+                                <option value="BRA">BRA</option>
+                                <option value="BRB">BRB</option>
+                                <option value="BRN">BRN</option>
+                                <option value="BTN">BTN</option>
+                                <option value="BWA">BWA</option>
+                                <option value="CAF">CAF</option>
+                                <option value="CAN">CAN</option>
+                                <option value="CHE">CHE</option>
+                                <option value="CHL">CHL</option>
+                                <option value="CHN">CHN</option>
+                                <option value="CIV">CIV</option>
+                                <option value="CMR">CMR</option>
+                                <option value="COD">COD</option>
+                                <option value="COG">COG</option>
+                                <option value="COK">COK</option>
+                                <option value="COL">COL</option>
+                                <option value="COM">COM</option>
+                                <option value="CPV">CPV</option>
+                                <option value="CRI">CRI</option>
+                                <option value="CUB">CUB</option>
+                                <option value="CYP">CYP</option>
+                                <option value="CZE">CZE</option>
+                                <option value="DEU">DEU</option>
+                                <option value="DJI">DJI</option>
+                                <option value="DMA">DMA</option>
+                                <option value="DNK">DNK</option>
+                                <option value="DOM">DOM</option>
+                                <option value="DZA">DZA</option>
+                                <option value="ECU">ECU</option>
+                                <option value="EGY">EGY</option>
+                                <option value="ERI">ERI</option>
+                                <option value="ESP">ESP</option>
+                                <option value="EST">EST</option>
+                                <option value="ETH">ETH</option>
+                                <option value="EUU">EUU</option>
+                                <option value="FIN">FIN</option>
+                                <option value="FJI">FJI</option>
+                                <option value="FRA">FRA</option>
+                                <option value="FSM">FSM</option>
+                                <option value="GAB">GAB</option>
+                                <option value="GBR">GBR</option>
+                                <option value="GEO">GEO</option>
+                                <option value="GHA">GHA</option>
+                                <option value="GIN">GIN</option>
+                                <option value="GIN">GIN</option>
+                                <option value="GNB">GNB</option>
+                                <option value="GNQ">GNQ</option>
+                                <option value="GRC">GRC</option>
+                                <option value="GRD">GRD</option>
+                                <option value="GTM">GTM</option>
+                                <option value="GUY">GUY</option>
+                                <option value="HND">HND</option>
+                                <option value="HRV">HRV</option>
+                                <option value="HTI">HTI</option>
+                                <option value="HUN">HUN</option>
+                                <option value="IDN">IDN</option>
+                                <option value="IND">IND</option>
+                                <option value="IRL">IRL</option>
+                                <option value="IRN">IRN</option>
+                                <option value="IRQ">IRQ</option>
+                                <option value="ISL">ISL</option>
+                                <option value="ISR">ISR</option>
+                                <option value="ITA">ITA</option>
+                                <option value="JAM">JAM</option>
+                                <option value="JOR">JOR</option>
+                                <option value="JPN">JPN</option>
+                                <option value="KAZ">KAZ</option>
+                                <option value="KEN">KEN</option>
+                                <option value="KGZ">KGZ</option>
+                                <option value="KHM">KHM</option>
+                                <option value="KIR">KIR</option>
+                                <option value="KNA">KNA</option>
+                                <option value="KOR">KOR</option>
+                                <option value="KWT">KWT</option>
+                                <option value="LAO">LAO</option>
+                                <option value="LBN">LBN</option>
+                                <option value="LBR">LBR</option>
+                                <option value="LBY">LBY</option>
+                                <option value="LCA">LCA</option>
+                                <option value="LIE">LIE</option>
+                                <option value="LKA">LKA</option>
+                                <option value="LSO">LSO</option>
+                                <option value="LTU">LTU</option>
+                                <option value="LUX">LUX</option>
+                                <option value="LVA">LVA</option>
+                                <option value="MAR">MAR</option>
+                                <option value="MDA">MDA</option>
+                                <option value="MDG">MDG</option>
+                                <option value="MDV">MDV</option>
+                                <option value="MEX">MEX</option>
+                                <option value="MHL">MHL</option>
+                                <option value="MKD">MKD</option>
+                                <option value="MLI">MLI</option>
+                                <option value="MLT">MLT</option>
+                                <option value="MMR">MMR</option>
+                                <option value="MNE">MNE</option>
+                                <option value="MNG">MNG</option>
+                                <option value="MOZ">MOZ</option>
+                                <option value="MRT">MRT</option>
+                                <option value="MUS">MUS</option>
+                                <option value="MWI">MWI</option>
+                                <option value="MYS">MYS</option>
+                                <option value="NAM">NAM</option>
+                                <option value="NER">NER</option>
+                                <option value="NGA">NGA</option>
+                                <option value="NIC">NIC</option>
+                                <option value="NIU">NIU</option>
+                                <option value="NLD">NLD</option>
+                                <option value="NOR">NOR</option>
+                                <option value="NPL">NPL</option>
+                                <option value="NRU">NRU</option>
+                                <option value="NZL">NZL</option>
+                                <option value="OMN">OMN</option>
+                                <option value="PAK">PAK</option>
+                                <option value="PAN">PAN</option>
+                                <option value="PER">PER</option>
+                                <option value="PHL">PHL</option>
+                                <option value="PLW">PLW</option>
+                                <option value="PNG">PNG</option>
+                                <option value="POL">POL</option>
+                                <option value="PRK">PRK</option>
+                                <option value="PRT">PRT</option>
+                                <option value="PRY">PRY</option>
+                                <option value="QAT">QAT</option>
+                                <option value="ROU">ROU</option>
+                                <option value="RUS">RUS</option>
+                                <option value="RWA">RWA</option>
+                                <option value="SAU">SAU</option>
+                                <option value="SDN">SDN</option>
+                                <option value="SEN">SEN</option>
+                                <option value="SGP">SGP</option>
+                                <option value="SLB">SLB</option>
+                                <option value="SLE">SLE</option>
+                                <option value="SLV">SLV</option>
+                                <option value="SOM">SOM</option>
+                                <option value="SRB">SRB</option>
+                                <option value="SSD">SSD</option>
+                                <option value="STP">STP</option>
+                                <option value="SUR">SUR</option>
+                                <option value="SVK">SVK</option>
+                                <option value="SVN">SVN</option>
+                                <option value="SWE">SWE</option>
+                                <option value="SWZ">SWZ</option>
+                                <option value="SYC">SYC</option>
+                                <option value="SYR">SYR</option>
+                                <option value="TCD">TCD</option>
+                                <option value="TGO">TGO</option>
+                                <option value="THA">THA</option>
+                                <option value="TJK">TJK</option>
+                                <option value="TKM">TKM</option>
+                                <option value="TLS">TLS</option>
+                                <option value="TON">TON</option>
+                                <option value="TTO">TTO</option>
+                                <option value="TUN">TUN</option>
+                                <option value="TUR">TUR</option>
+                                <option value="TUV">TUV</option>
+                                <option value="TZA">TZA</option>
+                                <option value="UGA">UGA</option>
+                                <option value="UKR">UKR</option>
+                                <option value="URY">URY</option>
+                                <option value="USA">USA</option>
+                                <option value="UZB">UZB</option>
+                                <option value="VCT">VCT</option>
+                                <option value="VEN">VEN</option>
+                                <option value="VNM">VNM</option>
+                                <option value="VUT">VUT</option>
+                                <option value="WORLD">WORLD</option>
+                                <option value="WSM">WSM</option>
+                                <option value="YEM">YEM</option>
+                                <option value="ZAF">ZAF</option>
+                                <option value="ZMB">ZMB</option>
+                                <option value="ZWE">ZWE</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="sector_select" class="form-label">Select a sector</label>
+                            <select class="form-select" name="sector_select" id="sector_select"
+                                aria-label="Deafult select example">
+                                <option value="Energy">Energy</option>
+                                <option value="Industrial Processes">Industrial Processes</option>
+                                <option value="Agriculture">Agriculture</option>
+                                <option value="Waste">Waste</option>
+                                <option value="Land-Use Change and Forestry">Land-Use Change and
+                                    Forestry</option>
+                                <option value="Bunker Fuels">Bunker Fuels</option>
+                                <option value="Electricity/Heat">Electricity/Heat</option>
+                                <option value="Building">Building</option>
+                                <option value="Manufacturing/Construction">
+                                    Manufacturing/Construction
+                                </option>
+                                <option value="Transportation">Transportation</option>
+                                <option value="Other Fuel Combustion">Other Fuel Combustion</option>
+                                <option value="Fugitive Emissions">Fugitive Emissions</option>
+                            </select>
+
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="gas_select" class="form-label">Select type of gas</label>
+                            <select class="form-select" name="gas_select" id="gas_select"
+                                aria-label="Default gas select example">
+                                <option name="All GHG" value="All GHG">All GHG</option>
+                                <option name="CO2" value="CO2">CO2</option>
+                                <option name="CH4" value="CH4">CH4</option>
+                                <option name="N2O" value="N2O">N2O</option>
+                                <option name="F-Gas" value="F-Gas">F-Gas</option>
+                            </select>
+
+                        </div>
+
+                        <center>
+                            <button type="submit" id="submit" value="submit" name="submit"
+                                class="btn btn-primary">
+                                Submit
+                            </button>
+                        </center>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Column 2 -->
+            <div class="col-md-6">
+                <div class="p-3 border bg-light">
+                    <h2>User Selection</h2>
+                    <!-- Add data generated from script -->
+                    {% if user_selection_toggle %}
+
+                    <p>Country: {{user_selection_dict["country"]}}</p>
+                    <p>Source: {{user_selection_dict["source"]}}</p>
+                    <p>Gas: {{user_selection_dict["gas"]}}</p>
+                    <hr>
+
+                    <p>Emission Statistics</p>
+                    <p>
+                        Minimum: {{stats_dict["min"]}}
+                    </p>
+                    <p>
+                        Maximum: {{stats_dict["max"]}}
+                    </p>
+                    <p>
+                        Average: {{stats_dict["mean"]}}
+                    </p>
+
+                    {% else %}
+                    <p>
+                        Select the data field using the form.
+                    </p>
+
+                    {% endif %}
+                </div>
+            </div>
+            <br>
+            <p>
+                <hr>
+            </p>
+            <br>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="p-3 border bg-light">
+                            {% if chart_gen %}
+                            <center>
+                                <img src="{{ url_for('static', filename='annual_emissions.png') }}"
+                                    alt="Chart" height="auto" , width="70%">
+                            </center>
+                            {% endif %}
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Bootstrap JS -->
+            <script
+                src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+                crossorigin="anonymous"></script>
+            <!-- Bootstrap JS -->
+</body>
+
+</html>
